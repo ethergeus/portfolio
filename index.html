@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Andrey Antonowycz</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      const preferredLanguages = navigator.languages || [navigator.language || 'en'];
+      const locale = preferredLanguages.some((language) => language.toLowerCase().startsWith('nl')) ? 'nl' : 'en';
+      window.location.replace(`${locale}/`);
+    </script>
+  </head>
+  <body class="language-redirect">
+    <main>
+      <p>Choose a language / Kies een taal</p>
+      <p><a href="en/">English</a> · <a href="nl/">Nederlands</a></p>
+    </main>
+  </body>
+</html>
